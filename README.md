@@ -17,7 +17,7 @@
 ## Features
 
 - [x] Listagem de todos os desenvolvedores
-- [x] Listagem de desenvolvedores por ID
+- [x] Listagem de desenvolvedor por ID
 - [x] Cadastro de desenvolvedor
 - [x] Exclusão de desenvolvedor
 - [x] Edição de dado do desenvolvedor
@@ -50,6 +50,12 @@ docker stop apicrud
 
 ```bash
 docker rm apicrud
+```
+
+<p>Você pode deletar a imagem gerada anteriormente utilizando:</p>
+
+```
+docker rmi fonseca/dockernode 
 ```
 
 ## Tecnologias
