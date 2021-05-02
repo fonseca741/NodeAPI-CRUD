@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Developers List</title>
+</head>
+
+<body>
+  <h2>Developers List<h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <td><center>Nome</center></td>
+        <td><center>sexo</center></td>
+        <td><center>Idade</center></td>
+        <td><center>Hobby</center></td>
+        <td><center>Nascimento</center></td>
+        <td><center>Id</center></td>
+      </tr>
+    </thead>
+    <tbody>
+      <% objs.forEach(function(data) { %>
+      <tr>
+        <td><%= data.nome %></td>
+        <td><%= data.sexo %></td>
+        <td><%= data.idade %></td>
+        <td><%= data.hobby %></td>
+        <td><%= ((data.datanascimento.getDate() )) + "/" + ((data.datanascimento.getMonth() + 1)) + "/" + data.datanascimento.getFullYear() %></td>
+        <td><%= data._id %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+</body>
+
+</html>
